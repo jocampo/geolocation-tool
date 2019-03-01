@@ -8,7 +8,7 @@
         "quotemark": [true, "single"],
         "max-classes-per-file": [true, 5, "exclude-class-expressions"],
         "ordered-imports": [
-            true,
+            false,
             {
                 "import-sources-order": "any",
                 "module-source-path": "basename"
@@ -20,7 +20,9 @@
         "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"],
         "semicolon": [true, "always"],
         "eofline": true,
-        "linebreak-style": [true, "LF"]
+        "linebreak-style": [true, "LF"],
+        "trailing-comma": false,
+        "max-line-length": false
     },
     "linterOptions": {
         "exclude": [
