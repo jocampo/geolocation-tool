@@ -1,7 +1,6 @@
-.loader-container {
-    display: flex;
-    align-content: center;
+.results {
+    padding: 30px;
 }
-
-.fetch-button {
+.result {
+    margin: 20px 0 20px 10px;
 }

@@ -22,7 +22,6 @@ class GeolocationList extends React.Component<GeolocationListProps, GeolocationL
     }
 
     public componentDidMount() {
-        // get the most frequent locations
         this.setState({
             popularLocations: groupGeoLocationsByType(this.props.locations)
         });
@@ -33,8 +32,10 @@ class GeolocationList extends React.Component<GeolocationListProps, GeolocationL
 
         this.state.popularLocations.forEach((frequency, geolocation) => {
             locationData.push(
-                <div>
-                    The location {JSON.stringify(geolocation)} was found {frequency} times!
+                <div className={'result'} key={JSON.stringify(geolocation)}>
+                    <Typography variant={'h5'}>
+                        The geolocation {JSON.stringify(geolocation)} was found {frequency} times!
+                    </Typography>
                 </div>
             );
         });
@@ -45,12 +46,12 @@ class GeolocationList extends React.Component<GeolocationListProps, GeolocationL
     public render() {
 
         return (
-            <>
-                <Typography>
-                    These are the top most frequent locations
+            <div className={'results'}>
+                <Typography variant={'h4'}>
+                    These are the most frequent locations from the data we fetched:
                 </Typography>
                 {this.renderLocationData()}
-            </>
+            </div>
         );
     }
 }

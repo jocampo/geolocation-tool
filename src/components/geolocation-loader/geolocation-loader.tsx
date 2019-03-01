@@ -61,7 +61,7 @@ class GeolocationLoader extends React.Component<{}, GeolocationLoaderState> {
     public render() {
         const fetchingData = (
             <div className={'loader-container'}>
-                <Typography variant={'h2'}>
+                <Typography variant={'h3'}>
                     Loading geolocation data
                 </Typography>
                 <CircularProgress />
@@ -70,8 +70,8 @@ class GeolocationLoader extends React.Component<{}, GeolocationLoaderState> {
 
         return (
             <>
-                <Button disabled={this.state.loading} className={'fetch-button'} onClick={this.fetchGeolocationData}>
-                    <Typography variant={'button'}>
+                <Button disabled={this.state.loading} className={'fetch-button'} onClick={this.fetchGeolocationData} variant={'contained'}>
+                    <Typography variant={'button'} color={'primary'}>
                         Fetch Data
                     </Typography>
                 </Button>

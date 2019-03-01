@@ -46,3 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#root {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: #eceff1;
+    overflow: auto;
+}
+.body {
+    margin-bottom: 30px;
+}
