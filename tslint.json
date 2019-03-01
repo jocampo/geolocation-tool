@@ -1,0 +1,31 @@
+{
+    "extends": ["tslint:recommended", "tslint-react"],
+    "rules": {
+        "interface-name": false,
+        "member-ordering": false,
+        "object-literal-sort-keys": false,
+        "indent": [true, "spaces", 4],
+        "quotemark": [true, "single"],
+        "max-classes-per-file": [true, 5, "exclude-class-expressions"],
+        "ordered-imports": [
+            true,
+            {
+                "import-sources-order": "any",
+                "module-source-path": "basename"
+            }
+        ],
+        "no-consecutive-blank-lines": true,
+        "no-trailing-whitespace": true,
+        "one-line": [true, "check-open-brace", "check-catch", "check-else", "check-whitespace"],
+        "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"],
+        "semicolon": [true, "always"],
+        "eofline": true,
+        "linebreak-style": [true, "LF"]
+    },
+    "linterOptions": {
+        "exclude": [
+            "**/config/**/*.js",
+            "**/node_modules/**/*.ts"
+        ]
+    }
+}
