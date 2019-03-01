@@ -1012,6 +1012,11 @@
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.2.tgz#e13182e1b69871a422d7863e11a4a6f5b814a4bd"
   integrity sha512-42zEJkBpNfMEAvWR5WlwtTH22oDzcMjFsL9gDGExwF8X8WvAiw7Vwop7hPw03QT8TKfec83LwbHj6SvpqM4ELQ==
 
+"@types/underscore@^1.8.11":
+  version "1.8.11"
+  resolved "https://eatsa.jfrog.io/eatsa/api/npm/npm-eatsa/@types/underscore/-/underscore-1.8.11.tgz#c6c75977442b91c20edb399a0f7f2437a0c23498"
+  integrity sha1-xsdZd0QrkcIO2zmaD38kN6DCNJg=
+
 "@types/unist@*", "@types/unist@^2.0.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.2.tgz#5dc0a7f76809b7518c0df58689cd16a19bd751c6"
