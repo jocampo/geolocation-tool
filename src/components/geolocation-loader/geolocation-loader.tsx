@@ -13,7 +13,7 @@ interface GeolocationLoaderState {
 
 class GeolocationLoader extends React.Component<{}, GeolocationLoaderState> {
 
-    private API_ENDPOINT = 'https://app.wordstream.com/services/v1/wordstream/interview_data';
+    private API_ENDPOINT = 'https://app.lolstream.com/services/v1/wordstream/interview_data';
 
     constructor(props: any) {
         super(props);
